@@ -1,0 +1,67 @@
+<!--pages/my/my.wxml-->
+<view>
+  <view class='info'>
+    <view class='info-image'>
+      <image class='info-image-img' src='{{list.image}}'></image>
+      <image class='info-image-vip' wx:if="{{list.vip}}" src='/pages/img/icon/icon-vip.png'></image>
+      <image class='info-image-vip' wx:else src='/pages/img/icon/v.png'></image>
+    </view>
+    <view class='info-well'>
+      <view class='info-well-top'>
+        <text class='top-name'>{{list.name}}</text>
+        <image class='top-sex' wx:if="{{list.sex==0}}" src='/pages/img/icon/sex0.png'></image>
+        <image class='top-sex' wx:else src='/pages/img/icon/sex1.png'></image>
+        <text class='top-lv'>Lv.{{list.lv}}</text>
+      </view>
+      <text class='info-well-bot'>{{list.text}}</text>
+    </view>
+    <text class='info-sign' wx:if="{{list.sign}}">已签到</text>
+    <text class='info-sign' wx:else>未签到</text>
+  </view>
+  <view class="grids clear">
+    <navigator>
+      <text>{{list.Collection}}</text>
+      <text class='colh'>收藏</text>
+    </navigator>
+    <navigator>
+      <text>{{list.attention}}</text>
+      <text class='colh'>关注</text>
+    </navigator>
+    <navigator>
+      <text>{{list.fan}}</text>
+      <text class='colh'>粉丝</text>
+    </navigator>
+  </view>
+  <view class='floor'></view>
+  <view class='list-head'>
+    <view>我的学习</view>
+    <text class='list-head-time'>已学习：<text>{{list.class}}</text>节课 学习<text>{{house}}</text>小时<text>{{mouse}}</text>分</text>
+  </view>
+  <view class='index-nav'><!--功能列表-->
+    <view class='nav-item' wx:for="{{navlist}}" wx:key="index">
+      <image src='{{item.imga}}' lazy-load='true' mode='aspectFill'></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  <view class='floor'></view>
+  <view class='list-head'>
+    <view>我的资产</view>
+  </view>
+  <view class='index-nav'><!--功能列表-->
+    <view class='nav-item' wx:for="{{muclist}}" wx:key="index">
+      <image src='{{item.imga}}' lazy-load='true' mode='aspectFill'></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  <view class='floor'></view>
+  <view class='list-head'>
+    <view>我的服务</view>
+  </view>
+  <view class='index-nav'><!--功能列表-->
+    <view class='nav-item' wx:for="{{hellist}}" wx:key="index">
+      <image src='{{item.imga}}' lazy-load='true' mode='aspectFill'></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  <view class='floor'></view>
+</view>

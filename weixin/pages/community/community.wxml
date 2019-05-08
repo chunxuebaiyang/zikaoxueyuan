@@ -1,0 +1,75 @@
+<view>
+  <view class='community-title'>
+    <text>精彩活动</text>
+  </view>
+  <scroll-view scroll-x class="scroll-x">
+    <view wx:for="{{list}}" wx:key="{{index}}" class="view-parent">
+      <image src='{{item.url}}'></image>
+      <view class="view-item">{{item.text}}</view>
+    </view>
+  </scroll-view>
+  <view class='community-title'>
+    <text>精选话题</text>
+  </view>
+  <view class="lick">
+    <navigator>
+      <text>1</text>
+      <text>#2019我的高考成绩单#</text>
+    </navigator>
+        <navigator>
+      <text>2</text>
+      <text>#2019我的高考成绩单#</text>
+    </navigator>
+    <navigator>
+      <text>3</text>
+      <text>#2019我的高考成绩单#</text>
+    </navigator>
+    <navigator>
+      <text>4</text>
+      <text>#2019我的高考成绩单#</text>
+    </navigator>
+  </view>
+  <view class='home-user'>
+    <view class='home-list'>
+      <view class='home-flex'>
+        <view class='home-img'>
+          <image src='{{baseUrl}}img/user/user-logo-003.png'></image>
+        </view>
+        <view class='home-flex-box'>
+          <text class='floor1'>睿博学院潇潇 <text>Lv.12</text></text>
+          <text class='floor2'>睿博学院 2018-11-07</text>
+        </view>                                            
+        <view class='home-flex-follow'>
+          <button>
+            <!-- <text>关注</text> -->
+            <text>已关注</text>
+          </button>
+        </view>                                            
+      </view>
+      <view class='home-text'>
+        <view class='home-text-head'>
+          <text><text class='text'>#优秀是一种习惯，自考不息#</text>自考很难，要坚持下去每天多努力一点多学习一点以后的路就好走一点同学继续努力吧，下周还有课继续复习吧</text>
+        </view>
+        <view class='home-text-img'>
+          <view class='text-list' wx:for="{{textImage}}" wx:key="index">
+            <image src='{{item.imag}}'></image>
+          </view>
+        </view>
+        <view class='home-text-bottom'>
+          <view class='home-text-bottom-item' bindtap="forword">
+            <button open-type='share' class='share'></button>
+            <image src='/pages/img/icon/text-any.png' ></image><text>200</text>
+          </view>
+          <view class='home-text-bottom-item'>
+            <image src='/pages/img/icon/text-say.png'></image><text>200</text>
+          </view>
+          <view class='home-text-bottom-item' bindtap='goods'>
+            <image wx:if="{{good}}" src='/pages/img/icon/text-good.png'></image>
+            <image wx:else="{{good}}" src='/pages/img/icon/text-good2.png'></image>
+            <text>200</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

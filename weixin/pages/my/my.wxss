@@ -1,0 +1,143 @@
+/* pages/my/my.wxss */
+.info{
+  padding:20rpx;
+  position:relative;
+  display: flex;
+  align-items: center;
+}
+.info-image{
+  margin-right:20rpx;
+  width: 110rpx;
+  height: 110rpx;
+  line-height: 160rpx;
+  text-align: center;
+  position: relative;
+}
+.info-image image{
+  border-radius: 50%;
+}
+.info-image-img{
+  width: 110rpx;
+  height: 110rpx;
+}
+.info-image-vip{
+  position: absolute;
+  bottom: 0rpx;
+  right: 0rpx;
+  width: 35rpx;
+  height: 35rpx;
+  border: 1px solid #fff;
+  border-radius: 100px;
+}
+.info-well{
+  flex:1;
+}
+.info-well-top{
+  font-size:17px;
+}
+.top-name{
+  float:left;
+}
+.top-sex{
+  margin-top: 4rpx;
+  background-size: 17px;
+  margin-left: 10rpx;
+  width: 35rpx;
+  height:35rpx;
+  margin-right: 10rpx;
+  border-radius: 50%;
+  border: 1px solid #faa
+}
+.top-lv{
+  color: #fff;
+  background: #fdb829;
+  border-radius: 2px;
+  padding: 1px 5px;
+  font-size: 12px;
+  position: relative;
+  top:-10rpx;
+}
+.info-well-bot{
+  font-size:13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color:#808080;
+  position: relative;
+  top:-10rpx;
+}
+.info-sign{
+  display: block;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  padding: 10rpx 20rpx;
+  background-image: linear-gradient(to right,#ff995a,#fe5a69);
+  background-color: #fe5a69;
+}
+.grids{
+  padding: 30rpx 0;
+  position: relative;
+  text-align: center
+}
+.grids navigator{
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  font-size:13px; 
+}
+.grids navigator text{
+  display: block;
+}
+.colh{
+  color: #808080
+}
+.floor{
+  height: 20rpx;
+  background-color:#f2f2f2;
+  clear: both;
+}
+.clear::after{
+  content: " ";
+  display: block;
+  clear: both
+}
+.list-head{
+  padding:25rpx 20rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.list-head view{
+  flex:1;
+  font-size:15px;
+}
+.list-head-time{
+  text-align: right;
+  color:#666;
+  position: relative;
+  font-size:12px; 
+} 
+.list-head-time text{
+  color:#ff5e65;
+}
+.index-nav{
+  display: flex;
+  flex-wrap:wrap;
+}
+.index-nav .nav-item{
+  width:33.333333%;
+  height:160rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  font-size:12px;
+  color:#aaa; 
+  margin:20rpx 0; 
+}
+.index-nav .nav-item image{
+  width:80rpx;
+  height:80rpx;
+  margin-bottom: 10rpx;
+}

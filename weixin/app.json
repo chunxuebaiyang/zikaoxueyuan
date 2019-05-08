@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/my/my",
+    "pages/community/community",
+    "pages/news/news",
+    "pages/home/home",
+    "pages/study/study",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "自考学院",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "pages/img/icon/home2.png",
+        "selectedIconPath": "pages/img/icon/home1.png"
+      },
+      {
+        "pagePath": "pages/study/study",
+        "text": "学习",
+        "iconPath": "pages/img/icon/study2.png",
+        "selectedIconPath": "pages/img/icon/study1.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "消息",
+        "iconPath": "pages/img/icon/news1.png",
+        "selectedIconPath": "pages/img/icon/news2.png"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "text": "社区",
+        "iconPath": "pages/img/icon/community2.png",
+        "selectedIconPath": "pages/img/icon/community1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "pages/img/icon/my1.png",
+        "selectedIconPath": "pages/img/icon/my2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

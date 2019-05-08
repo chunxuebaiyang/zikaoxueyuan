@@ -1,0 +1,66 @@
+<!--pages/home/home.wxml-->
+<view>
+  <view class='slider'><!--轮播图-->
+    <swiper autoplay='{{true}}' indicator-dots="{{true}}">
+      <swiper-item wx:for="{{list}}" wx:key="index">
+        <image src='{{item.imag}}'></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class='index-nav'><!--功能列表-->
+    <view class='nav-item' wx:for="{{navlist}}" wx:key="index">
+      <image src='{{item.imga}}' lazy-load='true' mode='aspectFill'></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  <view class='floor'></view>
+  <view class='home-title'>
+    <text>热门推荐</text>
+  </view>
+  <view class="home-ad">
+    <image src='{{baseUrl}}img/ad/ad-001.jpg'></image>
+  </view>
+  <view class='home-user'>
+    <view class='home-list'>
+      <view class='home-flex'>
+        <view class='home-img'>
+          <image src='{{baseUrl}}img/user/user-logo-003.png'></image>
+        </view>
+        <view class='home-flex-box'>
+          <text class='floor1'>睿博学院潇潇 <text>Lv.12</text></text>
+          <text class='floor2'>睿博学院 2018-11-07</text>
+        </view>                                            
+        <view class='home-flex-follow'>
+          <button>
+            <!-- <text>关注</text> -->
+            <text>已关注</text>
+          </button>
+        </view>                                            
+      </view>
+      <view class='home-text'>
+        <view class='home-text-head'>
+          <text><text class='text'>#优秀是一种习惯，自考不息#</text>自考很难，要坚持下去每天多努力一点多学习一点以后的路就好走一点同学继续努力吧，下周还有课继续复习吧</text>
+        </view>
+        <view class='home-text-img'>
+          <view class='text-list' wx:for="{{textImage}}" wx:key="index">
+            <image src='{{item.imag}}'></image>
+          </view>
+        </view>
+        <view class='home-text-bottom'>
+          <view class='home-text-bottom-item' bindtap="forword">
+            <button open-type='share' class='share'></button>
+            <image src='/pages/img/icon/text-any.png' ></image><text>200</text>
+          </view>
+          <view class='home-text-bottom-item'>
+            <image src='/pages/img/icon/text-say.png'></image><text>200</text>
+          </view>
+          <view class='home-text-bottom-item' bindtap='goods'>
+            <image wx:if="{{good}}" src='/pages/img/icon/text-good.png'></image>
+            <image wx:else="{{good}}" src='/pages/img/icon/text-good2.png'></image>
+            <text>200</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

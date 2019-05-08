@@ -1,0 +1,41 @@
+<!--pages/study/study.wxml-->
+<view>
+  <view class='index-nav'><!--功能列表-->
+    <view class='nav-item'>
+      <image src='/pages/img/icon/icon-001.png'></image>
+      <navigator src="course">我的课程</navigator>
+    </view>
+    <view class='nav-item'>
+      <image src='/pages/img/icon/icon-002.png'></image>
+      <navigator src="course">我的题库</navigator>
+    </view>
+    <view class='nav-item'>
+      <image src='/pages/img/icon/icon-003.png'></image>
+      <navigator src="course">学习规划</navigator>
+    </view>
+  </view>
+  <view class='floor'></view>
+  <view class='study-title'>
+    <text>今日课程</text>
+  </view>
+  <view class='study-box'>
+    <view class='study-item'>
+      <view class='study-flex'>
+        <view class='house'>12月07日 14:30-16:30</view>
+        <view class='time'>今日16:30直播</view>
+      </view>
+      <view class='study-course-title'>
+        <view>2018级项目管理本科项目成本管理课程第一节(一)</view>
+        <view>自考项目管理本科--自考</view>
+      </view>
+      <view class='study-flex'>
+        <view class='study-flex-TUser'><image src='{{baseUrl}}img/user/user-mate-002.jpg'></image></view>
+        <view class='study-flex-title'><text>安然老师</text></view>
+      </view>
+      <view class='study-course-button'>
+        <button bindtap='downfile'><image src='/pages/img/icon/stydy2.png'></image><text>课程资料</text></button>
+        <button><image src='/pages/img/icon/stydy1.png'></image><text>课后作业</text></button>
+      </view>
+    </view>
+  </view>
+</view>

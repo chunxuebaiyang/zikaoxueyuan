@@ -1,0 +1,39 @@
+<!--pages/news/news.wxml-->
+<view>
+  <view class='news-flex b-line'>
+    <view class='news-left'><image src='{{baseUrl}}img/user/user-mate-009.jpg'></image></view>
+    <view class='news-cen news-head'><text>我的老师</text></view>
+    <view class='news-right'><text></text></view>
+  </view>
+  <view class='news-flex b-line'>
+    <view class='news-left'><image src='{{baseUrl}}img/user/user-mate-010.jpg'></image></view>
+    <view class='news-cen news-head'><text>消息通知</text></view>
+    <view class='news-right'><text></text></view>
+  </view>
+  <!-- qun -->
+  <view class='news-flex b-line'>
+    <view class='news-left'><image src='{{baseUrl}}img/user/user-mate-008.jpg'></image></view>
+    <view class='news-cen'><text class='news-cen-top'>项目管理本科群 <text class='news-cen-em'>班级群</text></text><text class='news-cen-bot'>陈涛：哈哈哈</text></view>
+    <view class='news-text'><text>今天</text></view>
+  </view>
+  <view class='news-flex b-line'>
+    <view class='news-left'><image src='{{baseUrl}}img/user/user-mate-008.jpg'></image></view>
+    <view class='news-cen'><text class='news-cen-top'>项目管理本科群</text><text class='news-cen-bot'>陈涛：哈哈哈</text></view>
+    <view class='news-text'><text>今天</text></view>
+  </view>
+  <view class='news-flex b-line'>
+    <view class='news-left'><image src='{{baseUrl}}img/user/user-mate-008.jpg'></image></view>
+    <view class='news-cen'><text class='news-cen-top'>项目管理本科群 <text class='news-cen-em'>课程群</text></text><text class='news-cen-bot'>陈涛：哈哈哈</text></view>
+    <view class='news-text'><text>今天</text></view>
+  </view>
+  <view class='news-flex b-line'>
+    <view class='news-left'><image src='{{baseUrl}}img/user/user-mate-008.jpg'></image></view>
+    <view class='news-cen'><text class='news-cen-top'>项目管理本科群</text><text class='news-cen-bot'>陈涛：哈哈哈</text></view>
+    <view class='news-text'><text>今天</text></view>
+  </view>
+  <view class='news-flex b-line'>
+    <view class='news-left'><image src='{{baseUrl}}img/user/user-mate-008.jpg'></image></view>
+    <view class='news-cen'><text class='news-cen-top'>项目管理本科群</text><text class='news-cen-bot'>陈涛：哈哈哈</text></view>
+    <view class='news-text'><text>今天</text></view>
+  </view> 
+</view>
